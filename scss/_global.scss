@@ -1,0 +1,107 @@
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  min-width: 320px;
+  overflow-x: hidden;
+  color: #cec7bb;
+}
+a{
+  display: block;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  margin: 0;
+  padding: 0;
+}
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.content__title{
+  @include adaptiv-font(30, 24);
+  color: #332929;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  letter-spacing: 1.2px;
+  position: relative;
+  display: inline-block;
+  text-shadow: #493f3f 1px 0 3px;
+}
+
+.content__title span{
+  color: #FF4500;
+  @include adaptiv-font(50, 40);
+  letter-spacing: 1.2px;
+  text-shadow: #ff4500 1px 0 3px;
+}
+
+.content__title::after{
+  content: '';
+  position: absolute;
+  height: 1px;
+  background-color: #cec7bb;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.content__subtitle{
+  max-width: 40%;
+  color: #332929;
+  letter-spacing: 1.2px;
+}
+
+@keyframes text_reveal_box{
+  50%{
+    width: 100%;
+    left: 0
+  }
+  100%{
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes text_reveal{
+  100%{
+    color: #FFFAF0;
+  }
+}
+
+@keyframes text_reveal_name{
+  100%{
+    color: #FF4500;
+  }
+}
