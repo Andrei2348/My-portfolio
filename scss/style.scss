@@ -5,7 +5,6 @@
 
 // Navbar section
 .header{
-  // background-color: brown;
   top: 0;
   left: 0;
   right: 0;
@@ -24,6 +23,66 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.navbar__burger{
+  z-index: 100;
+  height: 40px;
+  width: 40px;
+  position: relative;
+  // display: flex;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: all 1.1s;
+}
+
+.navbar__line{
+  height: 4px;
+  width: 40px;
+  position: relative;
+  background-color: #FFFAF0;
+  z-index: -1;
+}
+
+.navbar__line::after,
+.navbar__line::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #FFFAF0;
+  left: 0;
+  transition-property: top, bottom;
+  transition: 0.5s ease;
+}
+
+.navbar__line::after{
+  top: 12px;
+}
+
+.navbar__line::before{
+  bottom: 12px;
+}
+
+.navbar__burger.active{
+  transform: rotate(360deg);
+}
+
+.navbar__burger.active .navbar__line{
+  background-color: transparent;
+}
+
+.navbar__burger.active .navbar__line::before{
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.navbar__burger.active .navbar__line::after{
+  top: 0;
+  transform: rotate(-45deg);
+} 
 
 .navbar__item + .navbar__item{
   margin-left: 20px;
@@ -88,6 +147,7 @@
   display: block;
   width: fit-content;
   @include adaptiv-font(75, 40);
+  font-weight: 400;
   position: relative;
   color: transparent;
   width: fit-content;
@@ -410,3 +470,5 @@
   color: #cec7bb;
   letter-spacing: 1.1px;
 }
+
+@import "media";
