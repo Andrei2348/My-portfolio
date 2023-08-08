@@ -29,7 +29,6 @@
   height: 40px;
   width: 40px;
   position: relative;
-  // display: flex;
   display: none;
   align-items: center;
   justify-content: center;
@@ -85,12 +84,12 @@
 } 
 
 .navbar__item + .navbar__item{
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .navbar__item-link{
-  font-size: 16px;
-  color: #fff;
+  font-size: 18px;
+  color: #FFFAF0;
   letter-spacing: 1.8px;
   font-weight: 400;
   line-height: 1.5;
@@ -221,7 +220,7 @@
 
 .projects__subcontent,
 .about__subcontent{
-  font-size: 24px;
+  @include adaptiv-font(24, 20);
   color: #332929;
   letter-spacing: 1.3px;
   text-align: center;
@@ -241,9 +240,6 @@
 
 .projects__gallery{
   margin-top: 70px;
-}
-
-.projects__gallery{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -353,7 +349,6 @@
 .footer{
   padding-top: 70px;
   background-color: rgb(32, 28, 28);
-  color: #cec7bb;
 }
 
 .footer__container{
@@ -372,13 +367,13 @@
 
 .footer__leftside{
   padding-right: 20px;
-  border-right: 1px solid #cec7bb;
+  border-right: 1px solid #cec7bb50;
   transition: 0.6s ease all;
   text-align: right;
 }
 .footer__rightside{
   padding-left: 20px;
-  border-left: 1px solid #cec7bb;
+  border-left: 1px solid #cec7bb50;
   transition: 0.6s ease all;
   text-align: left;
 }
@@ -393,6 +388,7 @@
   line-height: 1.5;
   transition: 0.6s ease all;
   letter-spacing: 1.6px;
+  text-transform: uppercase;
 }
 
 .footer-nav__item-link:hover{
@@ -461,6 +457,10 @@
 
 .footer__logo-image{
   width: 140px;
+}
+
+.footer__logo-image{
+  display: inline-block;
 }
 
 .footer__copyright{

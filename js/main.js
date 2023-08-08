@@ -32,7 +32,6 @@ mobile__item.forEach(item=>{
   });
 });
 
-
 $(function(){
 	$('.about__advantages').slick({
 		autoplay: true,
@@ -43,5 +42,25 @@ $(function(){
 		pauseOnHover: false,
 		slidesToShow: 4,
 		speed: 500,
+		responsive: [
+			{
+				breakpoint: 900,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 700,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 560,
+				settings: {
+					slidesToShow: 1
+				}
+			},
+		]
 	});
 })
