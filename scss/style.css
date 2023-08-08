@@ -727,8 +727,8 @@ img {
 
 .projects__subtitle {
   text-align: left;
-  padding-right: 20px;
-  border-right: 1px solid #cec7bb;
+  padding-left: 30px;
+  border-left: 1px solid #cec7bb;
 }
 
 .projects__gallery {
@@ -786,8 +786,8 @@ img {
 
 .about__subtitle {
   text-align: right;
-  padding-left: 20px;
-  border-left: 1px solid #cec7bb;
+  padding-right: 30px;
+  border-right: 1px solid #cec7bb;
 }
 
 .about__advantages {
@@ -926,6 +926,10 @@ img {
 }
 
 .footer__social-icon {
+  transition: 0.6s ease all;
+}
+
+.footer__social-icon:hover path {
   transition: 0.6s ease all;
 }
 

@@ -44,5 +44,4 @@ $(function(){
 		slidesToShow: 4,
 		speed: 500,
 	});
-		
 })
