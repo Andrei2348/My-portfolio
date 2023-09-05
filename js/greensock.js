@@ -28,26 +28,6 @@ gsap.to('.hero__bcg', {
   scale: 1.2,
 })
 
-// gsap.to('[data-speed]',{
-//   y: (i, el) => -(1 - parseFloat(el.getAttribute('data-speed'))) * ScrollTrigger.maxScroll(window),
-//   scrollTrigger:{
-//     scrub: 0
-//   }
-// })
-
-
-
-// gsap.from('.projects__title', {
-//   scrollTrigger:{
-//     trigger: '.projects',
-//     start: '-20% center',
-//     end: '+=300px',
-//     scrub: true,
-//   },
-//   scale: 0.7,
-//   transformOrigin: 'right center',
-//   ease: 'none',
-// })
 
 // Projects section
 gsap.from('.projects__subtitle', {
@@ -91,11 +71,12 @@ gsap.from('.projects__item', {
     trigger: '.projects',
     start: '10% center',
     end: '+=300px',
-    scrub: true
+    scrub: true,
   },
   scale: 0.5,
   transformOrigin: 'center center',
   ease: 'none',
+  stagger: 0.4
 })
 
 gsap.to('.projects__gallery', {

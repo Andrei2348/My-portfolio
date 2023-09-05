@@ -407,6 +407,7 @@
 .footer__leftside:hover{
   border-right: 1px solid #FF4500;
 }
+
 .footer__rightside:hover{
   border-left: 1px solid #FF4500;
 }
@@ -465,12 +466,14 @@
   color: #FF4500;
 }
 
-.footer__logo-image{
-  width: 140px;
+.footer__logo-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer__logo-image{
-  display: inline-block;
+  width: 150px;
 }
 
 .footer__copyright{

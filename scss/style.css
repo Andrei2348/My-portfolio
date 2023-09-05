@@ -1030,12 +1030,14 @@ body {
   color: #FF4500;
 }
 
-.footer__logo-image {
-  width: 140px;
+.footer__logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer__logo-image {
-  display: inline-block;
+  width: 150px;
 }
 
 .footer__copyright {
@@ -1064,7 +1066,7 @@ body {
     justify-content: center;
   }
   .footer__center {
-    order: 0;
+    order: 3;
     text-align: center;
   }
   .footer__social-icons {
@@ -1109,6 +1111,9 @@ body {
   .footer__rightside:hover {
     border-left: none;
     border-right: none;
+  }
+  .footer__copyright {
+    padding-top: 50px;
   }
 }
 @media (max-width: 768px) {

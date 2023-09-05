@@ -1,9 +1,9 @@
 $(function(){
   SmoothScroll({
       // Время скролла 400 = 0.4 секунды
-      animationTime : 2600,
+      animationTime : 1600,
       // Размер шага в пикселях
-      stepSize : 55,
+      stepSize : 75,
     
       // Дополнительные настройки:
     
