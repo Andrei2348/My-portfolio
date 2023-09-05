@@ -2,6 +2,7 @@ html{
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
 *,
 *::before,
 *::after{
@@ -9,6 +10,7 @@ html{
   padding: 0;
   margin: 0;
 }
+
 body{
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
@@ -17,10 +19,12 @@ body{
   overflow-x: hidden;
   color: #cec7bb;
 }
+
 a{
   display: block;
   text-decoration: none;
 }
+
 h1,
 h2,
 h3,
@@ -30,16 +34,23 @@ h6{
   margin: 0;
   padding: 0;
 }
+
 ul,
 li{
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+html,
+body{
+  height: 100%;
 }
 
 .container{

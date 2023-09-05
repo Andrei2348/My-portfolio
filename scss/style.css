@@ -460,6 +460,11 @@ img {
      object-fit: cover;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -653,12 +658,19 @@ img {
 }
 
 .hero {
-  background-image: url(../images/bcg_header.jpg);
-  background-position: top center;
-  background-size: cover;
   position: relative;
   z-index: 1;
   height: 100vh;
+  overflow: hidden;
+}
+
+.hero__bcg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
 }
 
 .hero::after {
@@ -669,7 +681,7 @@ img {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: -1;
+  z-index: 2;
 }
 
 .hero__content {
@@ -678,6 +690,8 @@ img {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  position: relative;
+  z-index: 10;
 }
 
 .hero__title {
@@ -763,7 +777,7 @@ img {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 70px;
+  margin-bottom: 120px;
 }
 
 .projects,
@@ -861,7 +875,7 @@ img {
 }
 
 .about__advantages {
-  margin-top: 70px;
+  margin-top: 120px;
 }
 
 .about__advantages-card {
@@ -993,6 +1007,7 @@ img {
   align-items: center;
   justify-content: center;
   margin-top: 25px;
+  flex-grow: 1;
 }
 
 .footer__social-icon {
@@ -1024,6 +1039,7 @@ img {
 }
 
 .footer__copyright {
+  padding-top: 100px;
   display: block;
   text-align: center;
   font-size: 13px;
